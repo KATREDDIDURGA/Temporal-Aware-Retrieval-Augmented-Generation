@@ -1,0 +1,17 @@
+--index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://pypi.org/simple
+
+# Core AI and Math Libraries
+torch
+torchvision
+torchaudio
+
+# Hugging Face Ecosystem
+transformers
+accelerate
+bitsandbytes
+
+# Visualization and Data
+matplotlib
+numpy
+scipy

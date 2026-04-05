@@ -1,0 +1,7 @@
+NVIDIA GeForce RTX 5050:  have a very modern, 50-series card! This is excellent for research because it has the latest architecture for handling AI math.
+
+Memory-Usage: 0MiB / 8151MiB: This is the most important part.  have 8.1 GB of VRAM available, and it is currently empty. This is r "workspace."
+
+Driver Version: 581.95 | CUDA Version: 13.0:  are on the cutting edge! CUDA 13.0 is the "language" r GPU speaks.
+
+GPU-Util 0%: r GPU is currently doing zero work. It’s waiting for r Python script to give it instructions.

@@ -1,0 +1,3 @@
+.\ai_research_env\Scripts\activate
+pip install -r requirements.txt
+.\run_lab.bat

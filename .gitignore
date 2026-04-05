@@ -1,0 +1,19 @@
+# Virtual environment
+ai_research_env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# IDE files
+.vscode/
+.idea/

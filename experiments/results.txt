@@ -1,0 +1,302 @@
+(ai_research_env) PS F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift> python entropy_monitor.py
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\entropy_monitor.py:92: SyntaxWarning: invalid escape sequence '\s'
+  The Formula ($H = -\sum p \log p$):
+Loading microsoft/phi-2 on your GPU...
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\torch\compiler\__init__.py:148: FutureWarning: torch._dynamo.allow_in_graph is deprecated and will be removed in a future version. Use torch._dynamo.nonstrict_trace instead.
+  return torch._dynamo.allow_in_graph(fn)
+W0316 20:36:35.495000 26252 ai_research_env\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 453/453 [00:04<00:00, 95.17it/s]
+------------------------------
+
+TESTING PROMPT: 'The capital of France is'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Token:  Paris       | Entropy: 0.1687
+Token: ."           | Entropy: 0.8070
+Token:
+            | Entropy: 0.6410
+Token:
+            | Entropy: 2.0617
+Token: Answer       | Entropy: 2.3387
+Token: :            | Entropy: 0.0342
+Token:  The         | Entropy: 1.7823
+Token:  capital     | Entropy: 2.3585
+Token:  of          | Entropy: 0.0079
+Token:  France      | Entropy: 0.0015
+
+TESTING PROMPT: 'In the year 2026, the red cat that is actually a blue dog says'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token:  "           | Entropy: 1.9479
+Token: I            | Entropy: 2.2058
+Token:  am          | Entropy: 1.7866
+Token:  not         | Entropy: 1.1275
+Token:  a           | Entropy: 0.3200
+Token:  cat         | Entropy: 0.5765
+Token: "            | Entropy: 1.8765
+Token:  and         | Entropy: 1.8695
+Token:  then        | Entropy: 0.8073
+Token:  goes        | Entropy: 2.8110
+(ai_research_env) PS F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift> python entropy_monitor.py
+C:\Users\katre\AppData\Local\Python\pythoncore-3.12-64\python.exe: can't open file 'F:\\OneDrive\\Desktop\\Research AI\\Semantic Cognitive Drift\\entropy_monitor.py': [Errno 2] No such file or directory
+(ai_research_env) PS F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift> python entropy_monitor2.py
+  File "F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\entropy_monitor2.py", line 105
+    for i, score in enumerate(outputs.scores):
+IndentationError: unexpected indent
+(ai_research_env) PS F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift> python entropy_monitor2.py
+  File "F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\entropy_monitor2.py", line 102
+    for i, score in enumerate(outputs.scores):
+IndentationError: unexpected indent
+(ai_research_env) PS F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift> python entropy_monitor2.py
+Loading microsoft/phi-2 on your GPU...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\torch\compiler\__init__.py:148: FutureWarning: torch._dynamo.allow_in_graph is deprecated and will be removed in a future version. Use torch._dynamo.nonstrict_trace instead.
+  return torch._dynamo.allow_in_graph(fn)
+W0316 22:12:51.875000 5948 ai_research_env\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 453/453 [00:04<00:00, 112.33it/s]
+------------------------------
+
+TESTING PROMPT: 'The capital of France is'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Token:  Paris       | Entropy: 0.1687 | ✅ CLEAR: CONFIDENT
+Token: .            | Entropy: 0.8070 | ✅ CLEAR: CONFIDENT
+Token:
+            | Entropy: 0.3752 | ✅ CLEAR: CONFIDENT
+Token:              | Entropy: 1.3531 | ✅ CLEAR: CONFIDENT
+Token: How          | Entropy: 0.6957 | ✅ CLEAR: CONFIDENT
+Token:  many        | Entropy: 0.5955 | ✅ CLEAR: CONFIDENT
+Token:  stickers    | Entropy: 3.4803 | 🚨 ALERT: HIGH CONFUSION
+Token:  did         | Entropy: 1.0378 | ✅ CLEAR: CONFIDENT
+Token:  Lily        | Entropy: 3.3533 | 🚨 ALERT: HIGH CONFUSION
+Token:  have        | Entropy: 1.3759 | ✅ CLEAR: CONFIDENT
+Token: How          | Entropy: 0.6957 | ✅ CLEAR: CONFIDENT
+Token:  many        | Entropy: 0.5955 | ✅ CLEAR: CONFIDENT
+Token:  stickers    | Entropy: 3.4803 | 🚨 ALERT: HIGH CONFUSION
+Token:  did         | Entropy: 1.0378 | ✅ CLEAR: CONFIDENT
+Token:  Lily        | Entropy: 3.3533 | 🚨 ALERT: HIGH CONFUSION
+Token:  have        | Entropy: 1.3759 | ✅ CLEAR: CONFIDENT
+
+TESTING PROMPT: 'In the year 2026, the red cat that is actually a blue dog says'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token:  that        | Entropy: 1.9479 | ✅ CLEAR: CONFIDENT
+Token:  he          | Entropy: 1.9431 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 1.8478 | ✅ CLEAR: CONFIDENT
+Token:  blue        | Entropy: 2.0395 | 🚨 ALERT: HIGH CONFUSION
+Token: How          | Entropy: 0.6957 | ✅ CLEAR: CONFIDENT
+Token:  many        | Entropy: 0.5955 | ✅ CLEAR: CONFIDENT
+Token:  stickers    | Entropy: 3.4803 | 🚨 ALERT: HIGH CONFUSION
+Token:  did         | Entropy: 1.0378 | ✅ CLEAR: CONFIDENT
+Token:  Lily        | Entropy: 3.3533 | 🚨 ALERT: HIGH CONFUSION
+Token:  have        | Entropy: 1.3759 | ✅ CLEAR: CONFIDENT
+
+TESTING PROMPT: 'In the year 2026, the red cat that is actually a blue dog says'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token: How          | Entropy: 0.6957 | ✅ CLEAR: CONFIDENT
+Token:  many        | Entropy: 0.5955 | ✅ CLEAR: CONFIDENT
+Token:  stickers    | Entropy: 3.4803 | 🚨 ALERT: HIGH CONFUSION
+Token:  did         | Entropy: 1.0378 | ✅ CLEAR: CONFIDENT
+Token: How          | Entropy: 0.6957 | ✅ CLEAR: CONFIDENT
+Token:  many        | Entropy: 0.5955 | ✅ CLEAR: CONFIDENT
+Token:  stickers    | Entropy: 3.4803 | 🚨 ALERT: HIGH CONFUSION
+Token:  did         | Entropy: 1.0378 | ✅ CLEAR: CONFIDENT
+Token:  Lily        | Entropy: 3.3533 | 🚨 ALERT: HIGH CONFUSION
+Token:  have        | Entropy: 1.3759 | ✅ CLEAR: CONFIDENT
+
+TESTING PROMPT: 'In the year 2026, the red cat that is actually a blue dog says'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token:  that        | Entropy: 1.9479 | ✅ CLEAR: CONFIDENT
+Token:  he          | Entropy: 1.9431 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 1.8478 | ✅ CLEAR: CONFIDENT
+Token:  blue        | Entropy: 2.0395 | 🚨 ALERT: HIGH CONFUSION
+Token:  Lily        | Entropy: 3.3533 | 🚨 ALERT: HIGH CONFUSION
+Token:  have        | Entropy: 1.3759 | ✅ CLEAR: CONFIDENT
+
+TESTING PROMPT: 'In the year 2026, the red cat that is actually a blue dog says'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token:  that        | Entropy: 1.9479 | ✅ CLEAR: CONFIDENT
+Token:  he          | Entropy: 1.9431 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 1.8478 | ✅ CLEAR: CONFIDENT
+Token:  that        | Entropy: 1.9479 | ✅ CLEAR: CONFIDENT
+Token:  he          | Entropy: 1.9431 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 1.8478 | ✅ CLEAR: CONFIDENT
+Token:  blue        | Entropy: 2.0395 | 🚨 ALERT: HIGH CONFUSION
+Token:  blue        | Entropy: 2.0395 | 🚨 ALERT: HIGH CONFUSION
+Token: .            | Entropy: 1.4146 | ✅ CLEAR: CONFIDENT
+Token: .            | Entropy: 1.4146 | ✅ CLEAR: CONFIDENT
+Token:  What        | Entropy: 1.7884 | ✅ CLEAR: CONFIDENT
+Token:  color       | Entropy: 1.4566 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 0.5427 | ✅ CLEAR: CONFIDENT
+Token:  the         | Entropy: 0.3476 | ✅ CLEAR: CONFIDENT
+Token:  dog         | Entropy: 1.0050 | ✅ CLEAR: CONFIDENT
+(ai_research_env) PS F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift> python entropy_monitor2.py
+Loading microsoft/phi-2 on your GPU...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\torch\compiler\__init__.py:148: FutureWarning: torch._dynamo.allow_in_graph is deprecated and will be removed in a future version. Use torch._dynamo.nonstrict_trace instead.
+  return torch._dynamo.allow_in_graph(fn)
+W0316 22:16:47.521000 2188 ai_research_env\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 453/453 [00:02<00:00, 183.30it/s]
+------------------------------
+
+TESTING PROMPT: 'The capital of France is'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Token:  Paris       | Entropy: 0.1687 | ✅ CLEAR: CONFIDENT
+Token: .            | Entropy: 0.8070 | ✅ CLEAR: CONFIDENT
+Token: 
+            | Entropy: 0.3752 | ✅ CLEAR: CONFIDENT
+Token: <|endoftext|> | Entropy: 1.3531 | ✅ CLEAR: CONFIDENT
+
+TESTING PROMPT: 'In the year 2026, the red cat that is actually a blue dog says'
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token: ,            | Entropy: 1.9479 | ✅ CLEAR: CONFIDENT
+Token:  "           | Entropy: 0.3176 | ✅ CLEAR: CONFIDENT
+Token: I            | Entropy: 1.4103 | ✅ CLEAR: CONFIDENT
+Token:  am          | Entropy: 2.0598 | 🚨 ALERT: HIGH CONFUSION
+Token:  not         | Entropy: 1.3709 | ✅ CLEAR: CONFIDENT
+Token:  a           | Entropy: 0.4017 | ✅ CLEAR: CONFIDENT
+Token:  cat         | Entropy: 0.7365 | ✅ CLEAR: CONFIDENT
+Token: ."           | Entropy: 1.8542 | ✅ CLEAR: CONFIDENT
+Token:  Which       | Entropy: 1.8932 | ✅ CLEAR: CONFIDENT
+Token:  of          | Entropy: 1.6189 | ✅ CLEAR: CONFIDENT
+(ai_research_env) PS F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift> python entropy_monitor3.py
+Loading microsoft/phi-2 on your RTX 5050...
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\torch\compiler\__init__.py:148: FutureWarning: torch._dynamo.allow_in_graph is deprecated and will be removed in a future version. Use torch._dynamo.nonstrict_trace instead.
+  return torch._dynamo.allow_in_graph(fn)
+W0316 22:17:10.188000 16448 ai_research_env\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 453/453 [00:02<00:00, 186.34it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+==================================================
+RUNNING TEST: (ORIGINAL - NO CONTEXT)
+Prompt: The 2026 tax rate for a conservative portfolio is
+==================================================
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Token:  12          | Entropy: 3.3030 | 🚨 ALERT: HIGH CONFUSION
+Token: %            | Entropy: 0.8989 | ✅ CLEAR: CONFIDENT
+Token:  and         | Entropy: 1.4331 | ✅ CLEAR: CONFIDENT
+Token:  a           | Entropy: 1.1190 | ✅ CLEAR: CONFIDENT
+Token:  moderate    | Entropy: 1.4610 | ✅ CLEAR: CONFIDENT
+Token:  portfolio   | Entropy: 0.0430 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 0.0692 | ✅ CLEAR: CONFIDENT
+Token:  15          | Entropy: 1.4480 | ✅ CLEAR: CONFIDENT
+Token: %.           | Entropy: 0.2167 | ✅ CLEAR: CONFIDENT
+Token:
+            | Entropy: 2.1386 | 🚨 ALERT: HIGH CONFUSION
+
+==================================================
+RUNNING TEST: (WITH KNOWLEDGE INJECTION)
+Prompt: The 2026 tax rate for a conservative portfolio is
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 453/453 [00:02<00:00, 186.34it/s] 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+==================================================
+RUNNING TEST: (ORIGINAL - NO CONTEXT)
+Prompt: The 2026 tax rate for a conservative portfolio is
+==================================================
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Token:  12          | Entropy: 3.3030 | 🚨 ALERT: HIGH CONFUSION
+Token: %            | Entropy: 0.8989 | ✅ CLEAR: CONFIDENT
+Token:  and         | Entropy: 1.4331 | ✅ CLEAR: CONFIDENT
+Token:  a           | Entropy: 1.1190 | ✅ CLEAR: CONFIDENT
+Token:  moderate    | Entropy: 1.4610 | ✅ CLEAR: CONFIDENT
+Token:  portfolio   | Entropy: 0.0430 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 0.0692 | ✅ CLEAR: CONFIDENT
+Token:  15          | Entropy: 1.4480 | ✅ CLEAR: CONFIDENT
+Token: %.           | Entropy: 0.2167 | ✅ CLEAR: CONFIDENT
+Token:
+            | Entropy: 2.1386 | 🚨 ALERT: HIGH CONFUSION
+
+==================================================
+RUNNING TEST: (WITH KNOWLEDGE INJECTION)
+Prompt: The 2026 tax rate for a conservative portfolio is
+
+==================================================
+RUNNING TEST: (ORIGINAL - NO CONTEXT)
+Prompt: The 2026 tax rate for a conservative portfolio is
+==================================================
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift\ai_research_env\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Token:  12          | Entropy: 3.3030 | 🚨 ALERT: HIGH CONFUSION
+Token: %            | Entropy: 0.8989 | ✅ CLEAR: CONFIDENT
+Token:  and         | Entropy: 1.4331 | ✅ CLEAR: CONFIDENT
+Token:  a           | Entropy: 1.1190 | ✅ CLEAR: CONFIDENT
+Token:  moderate    | Entropy: 1.4610 | ✅ CLEAR: CONFIDENT
+Token:  portfolio   | Entropy: 0.0430 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 0.0692 | ✅ CLEAR: CONFIDENT
+Token:  15          | Entropy: 1.4480 | ✅ CLEAR: CONFIDENT
+Token: %.           | Entropy: 0.2167 | ✅ CLEAR: CONFIDENT
+Token:
+            | Entropy: 2.1386 | 🚨 ALERT: HIGH CONFUSION
+
+==================================================
+RUNNING TEST: (WITH KNOWLEDGE INJECTION)
+Prompt: The 2026 tax rate for a conservative portfolio is
+e will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Token:  12          | Entropy: 3.3030 | 🚨 ALERT: HIGH CONFUSION
+Token: %            | Entropy: 0.8989 | ✅ CLEAR: CONFIDENT
+Token:  and         | Entropy: 1.4331 | ✅ CLEAR: CONFIDENT
+Token:  a           | Entropy: 1.1190 | ✅ CLEAR: CONFIDENT
+Token:  moderate    | Entropy: 1.4610 | ✅ CLEAR: CONFIDENT
+Token:  portfolio   | Entropy: 0.0430 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 0.0692 | ✅ CLEAR: CONFIDENT
+Token:  15          | Entropy: 1.4480 | ✅ CLEAR: CONFIDENT
+Token: %.           | Entropy: 0.2167 | ✅ CLEAR: CONFIDENT
+Token:
+            | Entropy: 2.1386 | 🚨 ALERT: HIGH CONFUSION
+
+==================================================
+RUNNING TEST: (WITH KNOWLEDGE INJECTION)
+Prompt: The 2026 tax rate for a conservative portfolio is
+Token:  moderate    | Entropy: 1.4610 | ✅ CLEAR: CONFIDENT
+Token:  portfolio   | Entropy: 0.0430 | ✅ CLEAR: CONFIDENT
+Token:  is          | Entropy: 0.0692 | ✅ CLEAR: CONFIDENT
+Token:  15          | Entropy: 1.4480 | ✅ CLEAR: CONFIDENT
+Token: %.           | Entropy: 0.2167 | ✅ CLEAR: CONFIDENT
+Token:
+            | Entropy: 2.1386 | 🚨 ALERT: HIGH CONFUSION
+
+==================================================
+RUNNING TEST: (WITH KNOWLEDGE INJECTION)
+Prompt: The 2026 tax rate for a conservative portfolio is
+==================================================
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token:  20          | Entropy: 1.3233 | ✅ CLEAR: CONFIDENT
+
+==================================================
+RUNNING TEST: (WITH KNOWLEDGE INJECTION)
+Prompt: The 2026 tax rate for a conservative portfolio is
+==================================================
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token:  20          | Entropy: 1.3233 | ✅ CLEAR: CONFIDENT
+==================================================
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Token:  20          | Entropy: 1.3233 | ✅ CLEAR: CONFIDENT
+Token: %.           | Entropy: 0.2920 | ✅ CLEAR: CONFIDENT
+Token:
+            | Entropy: 1.3160 | ✅ CLEAR: CONFIDENT
+Token: Assistant    | Entropy: 0.0234 | ✅ CLEAR: CONFIDENT
+Token: %.           | Entropy: 0.2920 | ✅ CLEAR: CONFIDENT
+Token:
+            | Entropy: 1.3160 | ✅ CLEAR: CONFIDENT
+Token: Assistant    | Entropy: 0.0234 | ✅ CLEAR: CONFIDENT
+Token: :            | Entropy: 0.0000 | ✅ CLEAR: CONFIDENT
+            | Entropy: 1.3160 | ✅ CLEAR: CONFIDENT
+Token: Assistant    | Entropy: 0.0234 | ✅ CLEAR: CONFIDENT
+Token: :            | Entropy: 0.0000 | ✅ CLEAR: CONFIDENT
+Token: :            | Entropy: 0.0000 | ✅ CLEAR: CONFIDENT
+Token:  I           | Entropy: 1.9176 | ✅ CLEAR: CONFIDENT
+Token:  I           | Entropy: 1.9176 | ✅ CLEAR: CONFIDENT
+Token: 'm           | Entropy: 1.3439 | ✅ CLEAR: CONFIDENT
+Token:  sorry       | Entropy: 0.2489 | ✅ CLEAR: CONFIDENT
+Token: ,            | Entropy: 0.1225 | ✅ CLEAR: CONFIDENT
+Token:  but         | Entropy: 1.0071 | ✅ CLEAR: CONFIDENT
+(ai_research_env) PS F:\OneDrive\Desktop\Research AI\Semantic Cognitive Drift>
